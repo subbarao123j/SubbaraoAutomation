@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTest">
+  <test thread-count="5" name="SmokeTestScenario">
+    <classes>
+      <class name="class11.AssertionDemo"/>
+    </classes>
+  </test> <!-- SmokeTestScenario -->
+</suite> <!-- SmokeTest -->

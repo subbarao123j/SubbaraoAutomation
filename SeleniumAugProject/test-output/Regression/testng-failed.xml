@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <test thread-count="5" name="BasicReressionTest">
+    <classes>
+      <class name="class11.MyCRMApplication"/>
+      <class name="class11.MyCRMApplicationdependsOn"/>
+      <class name="class11.MyFirstTestNG2"/>
+      <class name="class11.MyCRMApplication4"/>
+      <class name="class11.MyFirstTestNG"/>
+      <class name="class11.MyCRMApplication3"/>
+    </classes>
+  </test> <!-- BasicReressionTest -->
+  <test name="BasicReressionTest(failed)">
+    <classes>
+      <class name="class11.MyCRMApplicationdependsOn">
+        <methods>
+          <include name="loginApp"/>
+          <include name="logOut"/>
+          <include name="userCreate"/>
+        </methods>
+      </class> <!-- class11.MyCRMApplicationdependsOn -->
+    </classes>
+  </test> <!-- BasicReressionTest(failed) -->
+</suite> <!-- Failed suite [Regression] -->

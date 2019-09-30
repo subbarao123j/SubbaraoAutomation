@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="Test">
+   <parameter  name="browser" value= "Firefox"> </parameter>
+  <parameter  name="url" value= "http://www.gmail.com"> </parameter>
+  <parameter  name="session" value= "class11"> </parameter>
+  
+    <classes>
+      <class name="class12.AcceptParameters"/>
+    </classes>
+  </test> 
+  
+  
+  
+  <test thread-count="5" name="Test1">
+   <parameter  name="browser" value= "Chrome"> </parameter>
+  <parameter  name="url" value= "http://www.google.com"> </parameter>
+  <parameter  name="session" value= "class10"> </parameter>
+  
+    <classes>
+      <class name="class12.AcceptParameters"/>
+    </classes>
+  </test> 
+  
+  
+  <test thread-count="5" name="Test2">
+   <parameter  name="browser" value= "IE"> </parameter>
+  <parameter  name="url" value= "http://www.eenadu.com"> </parameter>
+  <parameter  name="session" value= "class9"> </parameter>
+  
+    <classes>
+      <class name="class12.AcceptParameters"/>
+    </classes>
+  </test> 
+  
+</suite> 

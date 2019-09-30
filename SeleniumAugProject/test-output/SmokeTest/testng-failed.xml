@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeTest]">
+  <test thread-count="5" name="SmokeTestScenario">
+    <classes>
+      <class name="class11.AssertionDemo"/>
+    </classes>
+  </test> <!-- SmokeTestScenario -->
+  <test name="SmokeTestScenario(failed)">
+    <classes>
+      <class name="class11.AssertionDemo">
+        <methods>
+          <include name="toolName1"/>
+          <include name="marksTest"/>
+        </methods>
+      </class> <!-- class11.AssertionDemo -->
+    </classes>
+  </test> <!-- SmokeTestScenario(failed) -->
+</suite> <!-- Failed suite [SmokeTest] -->
