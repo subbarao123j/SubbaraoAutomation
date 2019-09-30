@@ -9,6 +9,8 @@ public class ExceptionHandling {
 		
 		System.out.println(c);
 		
+		System.out.println("integer data correct");
+		
 	}
 
 }
