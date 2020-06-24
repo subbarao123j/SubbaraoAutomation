@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="3" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44465" started-at="2019-11-07T01:29:15Z" finished-at="2019-11-07T01:30:00Z">
+  <suite name="Default suite" duration-ms="49707" started-at="2020-02-01T11:39:44Z" finished-at="2020-02-01T11:40:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44465" started-at="2019-11-07T01:29:15Z" finished-at="2019-11-07T01:30:00Z">
-      <class name="testCasesDependencies.MyApplication2">
-        <test-method status="PASS" signature="startbrowser()[pri:0, instance:testCasesDependencies.MyApplication2@cb5822]" name="startbrowser" is-config="true" duration-ms="5014" started-at="2019-11-07T09:29:15Z" finished-at="2019-11-07T09:29:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startbrowser -->
-        <test-method status="PASS" signature="startApp()[pri:0, instance:testCasesDependencies.MyApplication2@cb5822]" name="startApp" duration-ms="3697" started-at="2019-11-07T09:29:20Z" finished-at="2019-11-07T09:29:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startApp -->
-        <test-method status="FAIL" signature="loginApp()[pri:0, instance:testCasesDependencies.MyApplication2@cb5822]" name="loginApp" duration-ms="34687" started-at="2019-11-07T09:29:24Z" depends-on-methods="testCasesDependencies.MyApplication2.startApp" finished-at="2019-11-07T09:29:59Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test name="Default test" duration-ms="49707" started-at="2020-02-01T11:39:44Z" finished-at="2020-02-01T11:40:34Z">
+      <class name="regressionsuite.AddprojectAndPromote">
+        <test-method status="FAIL" signature="creatingProject()[pri:0, instance:regressionsuite.AddprojectAndPromote@39aeed2f]" name="creatingProject" duration-ms="49691" started-at="2020-02-01T19:39:44Z" finished-at="2020-02-01T19:40:34Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Admin']"}
-  (Session info: chrome=78.0.3904.70)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[element not interactable
+  (Session info: chrome=77.0.3865.75)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KUL-3D3PXZ1', ip: '192.168.95.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'KUL-3D3PXZ1', ip: '10.1.5.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KUL_SU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62056}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2801ba422ab4791d4c70a4e47200cb4b
-*** Element info: {Using=xpath, value=//span[text()='Admin']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KUL_SU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64270}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7f3a3bcd04758f428019ac1e102280a4]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Admin']"}
-  (Session info: chrome=78.0.3904.70)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=77.0.3865.75)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KUL-3D3PXZ1', ip: '192.168.95.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'KUL-3D3PXZ1', ip: '10.1.5.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KUL_SU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62056}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2801ba422ab4791d4c70a4e47200cb4b
-*** Element info: {Using=xpath, value=//span[text()='Admin']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KUL_SU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64270}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7f3a3bcd04758f428019ac1e102280a4
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,11 +36,9 @@ Session ID: 2801ba422ab4791d4c70a4e47200cb4b
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testCasesDependencies.MyApplication2.loginApp(MyApplication2.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at regressionsuite.AddprojectAndPromote.creatingProject(AddprojectAndPromote.java:151)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,45 +65,11 @@ Session ID: 2801ba422ab4791d4c70a4e47200cb4b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginApp -->
-        <test-method status="SKIP" signature="logoutApp()[pri:0, instance:testCasesDependencies.MyApplication2@cb5822]" name="logoutApp" duration-ms="0" started-at="2019-11-07T09:29:59Z" depends-on-methods="testCasesDependencies.MyApplication2.loginApp" finished-at="2019-11-07T09:29:59Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MyApplication2.logoutApp()[pri:0, instance:testCasesDependencies.MyApplication2@cb5822] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MyApplication2.logoutApp()[pri:0, instance:testCasesDependencies.MyApplication2@cb5822] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutApp -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:testCasesDependencies.MyApplication2@cb5822]" name="closeApp" is-config="true" duration-ms="1033" started-at="2019-11-07T09:29:59Z" finished-at="2019-11-07T09:30:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- testCasesDependencies.MyApplication2 -->
+        </test-method> <!-- creatingProject -->
+      </class> <!-- regressionsuite.AddprojectAndPromote -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

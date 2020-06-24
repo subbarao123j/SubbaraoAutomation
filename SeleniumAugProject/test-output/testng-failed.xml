@@ -3,20 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="testCasesDependencies.MyApplication2"/>
+      <class name="regressionsuite.AddprojectAndPromote"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="testCasesDependencies.MyApplication2">
+      <class name="regressionsuite.AddprojectAndPromote">
         <methods>
-          <include name="startApp"/>
-          <include name="startbrowser"/>
-          <include name="logoutApp"/>
-          <include name="loginApp"/>
-          <include name="closeApp"/>
+          <include name="creatingProject"/>
         </methods>
-      </class> <!-- testCasesDependencies.MyApplication2 -->
+      </class> <!-- regressionsuite.AddprojectAndPromote -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
